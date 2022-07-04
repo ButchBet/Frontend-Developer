@@ -7,11 +7,64 @@
     <title>Selectors 2</title>
 
     <style>
+        div p {
+            color: lime;
+        }
+
+        div > p {
+            background: blue;
+        }
+
+        div > div {
+            background: red;
+        }
+
+        div + section {
+            background: yellow;
+        }
+
+        div ~ p {
+            color: yellow;
+        }
+        
+        div ~ div:hover {
+            background: red;
+        }
+
+        div > p {
+            background: purple;
+        }
     </style>
 </head>
 <body>
+    <section>
+        Es lo mejor.
+    </section>
+
     <div>
-        <p></p>
+        <p>Platzi</p>
+        <p>Es</p>
+        <div>
+            <p>Increible</p>
+        </div>
+    </div>
+
+    
+    <section>
+        Es lo mejor.
+    </section>
+    
+    <p>Hello dog!</p>
+
+    <div>
+        Master
+    </div>
+
+    <div>
+        <p> Hello 1.</p>
+        <section>
+            <p>Hello 2.</p>
+        </section>
     </div>
 </body>
 </html>
