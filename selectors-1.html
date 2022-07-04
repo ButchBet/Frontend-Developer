@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors 1</title>
+
+    <style>
+        * {
+            background: papayawhip;
+        }
+        div {
+            background: pink;
+        }
+
+        .title {
+            color: blueviolet;
+        }
+
+        #title2 {
+            color: brown;
+        }
+
+        a[href="https://platzi.com/"] {
+            color: black;
+            text-decoration: none;
+        }
+
+        a[href="https://platzi.com/"]:hover {
+            opacity: .9;
+        }
+
+        a[href="https://platzi.com/"]:active {
+            font-size: 50px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Hello world</div>
+
+    <div class="title2">Hello world 2</div>
+
+    <a href="https://platzi.com/" target="_blank">Platzi is awesome!</a>
+</body>
+</html>
