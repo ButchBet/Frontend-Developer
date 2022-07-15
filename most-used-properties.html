@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most used properties</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+        * {
+            --lime-green: #76B947;
+            --kelly-green: #B1D8B7;
+            --seafoam-green: #2F5233;
+            --spearmint: #94C973;
+
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        section {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .card {
+            width: 20rem;
+            height: 30rem;
+            background: var(--kelly-green);
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 1px 1px rgba(0, 0, 0, 0.488);
+            user-select: none;
+        }
+
+        .card img {
+            width: 100%;
+            height: 12rem;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card .profile-image {
+            position: absolute;
+            width: 8rem;
+            height: 8rem;
+            top: 7.5rem;
+            left: 5.6rem;
+            border-radius: 100%;
+            background-image: url("https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?cs=srgb&dl=pexels-hannah-nelson-1065084.jpg&fm=jpg");
+            background-size: cover;
+            background-position: 70% 50%;
+            border: 4px solid white;
+        }
+
+        #account-data {
+            width: 100%;
+            height: 17.7rem;
+            border-radius: 0 0 20px 20px;
+            display: grid;
+            grid-template-rows: 2fr repeat(3, 1fr);
+            grid-template-columns: 1fr;
+        }
+
+        #name-profession {
+            box-sizing: border-box;
+            padding-top: 3.8rem;
+            color: var(--seafoam-green);
+            text-align: center;
+            font-weight: 600;
+        }
+
+        #country-email {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+        
+        #country-email a {
+            text-decoration: none;
+            color: var(--seafoam-green)
+        }
+
+        #country-email a:hover {
+            opacity: .7;
+            text-decoration: underline;
+        }
+
+        #followers-following {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            font-size: 13px;
+            color: var(--seafoam-green);
+        }
+
+        #followers-following section {
+            justify-content: center;
+        }
+
+        button {
+            background: var(--spearmint);
+            border-radius: 0 0 20px 20px;
+            cursor: pointer;
+            color: white;
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: .01px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/12461880/pexels-photo-12461880.jpeg?cs=srgb&dl=pexels-till-daling-12461880.jpg&fm=jpg" alt="savage deer">
+            <!-- <video src="./assets/file.mp4" controls autoplay="on" loop></video> -->
+            <div class="profile-image"></div>
+
+            <section id="account-data">
+                <section id="name-profession">Camila Mamina <br> Frontend developer
+                </section>
+
+                <section id="country-email">
+                    <a href="https://es.wikipedia.org/wiki/Colombia" target="_blank">⚓ Colombia</a>
+
+                    <a href="http://sendemail.com/" target="_blank">✉️ Send email</a>
+                </section>
+
+                <section id="followers-following">
+                    <section id="followers">
+                        <p>Followers</p>
+                        <p>+ 1300</p>
+                    </section>
+
+                    <section id="following">
+                        <p>Following</p>
+                        <p>+ 300</p>
+                    </section>
+                </section>
+
+                <button>F o l l o w</button>
+            </section>
+        </div>
+    </section>    
+</body>
+</html>
